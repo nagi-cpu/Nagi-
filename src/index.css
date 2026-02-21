@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-rank-s: #8b5cf6;
+  --color-rank-a: #3b82f6;
+  --color-rank-b: #10b981;
+  --color-rank-c: #64748b;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+    min-height: 100vh;
+  }
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.rank-gradient-s {
+  background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+}
+
+.rank-gradient-a {
+  background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%);
+}
+
+.rank-gradient-b {
+  background: linear-gradient(135deg, #10b981 0%, #84cc16 100%);
+}
+
+.rank-gradient-c {
+  background: linear-gradient(135deg, #64748b 0%, #94a3b8 100%);
+}
